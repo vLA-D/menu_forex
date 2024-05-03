@@ -15,12 +15,11 @@ Docker configuration files are placed inside `be/docker` directory. It consists 
 
 ### Setup process
 
-- Clone repository using command: `git clone https://github.com/vLA-D/menu_forex.git`
-- Make sure there are no other running containers that could interfere with this application (to stop all running containers you may run `docker stop $(docker ps -q)`)
-- Change working directory to newly created one: `cd menu_forex`
+- Make sure you are positioned inside of `be` directory
 - Copy example environment file by running `cp .env.example .env`
 - Change working directory to docker directory: `cd docker`
 - Copy example environment file by running `cp .env.example .env`
+- Make sure there are no other running containers that could interfere with this application (to stop all running containers you may run `docker stop $(docker ps -q)`)
 - Run: `docker compose up -d` in order to build containers
 - Run: `docker compose exec app composer install` in order to install composer dependencies
 - Run: `docker compose exec app php artisan key:generate` to generate application key

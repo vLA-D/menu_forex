@@ -9,6 +9,11 @@ functionalities.
 Application is packed inside a single repository for more comfortable and easier setup.
 In reality, back-end and front-end would be separate repositories.
 
+### Setup process
+
+- Clone repository using command: `git clone https://github.com/vLA-D/menu_forex.git`
+- Change working directory to newly created one: `cd menu_forex`
+
 Follow both directories' readme instructions in order to properly setup the project.
 
 ### Folder structure:
